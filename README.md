@@ -1,2 +1,3 @@
 # Projet-print-it-queva
- Exercice de réalisation d'un ajouts sur site existant
+Vous débutez comme développeur front-end en freelance, et venez de décrocher une offre pour 
+dynamiser le site Internet statique d’une petite imprimerie familiale nommée Print it.
