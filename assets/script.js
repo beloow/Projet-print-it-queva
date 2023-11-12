@@ -28,26 +28,24 @@ const left = document.querySelector('.arrow_left');
 const right = document.querySelector('.arrow_right');
 
 // console log de left / right pour vérifier que je pointe bien l'élément
-
 console.log(left);
 console.log(right);
+
 
 // La fonction pour crée le caroussel
 
 function createCaroussel(position){
-	
   	const element = slides[position];
 		console.log(element);
 		const img = document.querySelector(".banner-img");
 		img.setAttribute("src" , "./assets/images/slideshow/"+ element.image);
-
 		const p = document.querySelector(".banner-txt");
 }
 
 // les addEventListener
 
 left.addEventListener("click", function () {
-	console.log("click left");
+	console.log("addEventListener click left");
     if (position == 0) {
         position = numberOfSlide - 1;
     }
@@ -58,12 +56,11 @@ left.addEventListener("click", function () {
 });
 
 right.addEventListener("click", function () {
-	console.log("click right");
+	console.log("addEventListener click right");
     if (position == numberOfSlide - 1) {
         position = 0;
     } else {
             position++;
     }
     createCaroussel(position);
-
 });
